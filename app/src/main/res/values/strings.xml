@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TheWeatherApp</string>
+    <string name="etLatitudf">Latitud</string>
+    <string name="etLongitud">Longitud</string>
+    <string name="btnConsultar">Consultar Tiempo</string>
+</resources>
