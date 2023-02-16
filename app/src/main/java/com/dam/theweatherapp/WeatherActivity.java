@@ -66,7 +66,40 @@ public class WeatherActivity extends AppCompatActivity {
                     tvTemp.setText(currently.getTemperature().toString());
                     tvHumidityValue.setText(currently.getHumidity().toString());
                     tvRainValue.setText(currently.getPrecipProbability().toString());
-                    //ivWeather.setImageResource();
+                    //check the summary and set the image
+                    String summary = currently.getSummary();
+                    switch (summary) {
+                        case "Clear":
+                            ivWeather.setImageResource(R.drawable.clear_day);
+                            break;
+                        case "Partly Cloudy":
+                            ivWeather.setImageResource(R.drawable.partly_cloudy);
+                            break;
+                        case "Cloudy":
+                            ivWeather.setImageResource(R.drawable.cloudy);
+                            break;
+                        case "Rain":
+                            ivWeather.setImageResource(R.drawable.rain);
+                            break;
+                        case "Snow":
+                            ivWeather.setImageResource(R.drawable.snow);
+                            break;
+                        case "Sleet":
+                            ivWeather.setImageResource(R.drawable.sleet);
+                            break;
+                        case "Wind":
+                            ivWeather.setImageResource(R.drawable.wind);
+                            break;
+                        case "Fog":
+                            ivWeather.setImageResource(R.drawable.fog);
+                            break;
+                        case "Clear Night":
+                            ivWeather.setImageResource(R.drawable.clear_night);
+                            break;
+                        case "Cloudy Night":
+                            ivWeather.setImageResource(R.drawable.cloudy_night);
+                            break;
+                    }
                 }
             }
 
