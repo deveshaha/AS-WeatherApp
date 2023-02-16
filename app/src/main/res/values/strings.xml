@@ -6,7 +6,7 @@
     <string name="tvTitulo">The Weather App</string>
     <string name="tvRegion">Region</string>
     <string name="tvHour">00:00 AM/PM</string>
-    <string name="tvTemp">0</string>
+    <string name="tvTemp">0º</string>
     <string name="tvHumidity">HUMEDAD</string>
     <string name="tvWind">LLUVIA</string>
     <string name="tvDescription">Weather Description</string>
